@@ -1,6 +1,6 @@
   (function ()  {
-    angular
-      .module("BlogApp", [])
+    angular // declares app is an angular application
+      .module("BlogApp", []) // see index.html ln 2, app must be declared
       .controller("BlogController", BlogController);
 
     function BlogController($scope, $http) {
@@ -13,7 +13,7 @@
       function getAllPosts() {
         $http
             .get("/api/blogpost");
-            .success(function(posts){
+            .success(function(posts)){
                 $scope.posts = posts;
             })
       }

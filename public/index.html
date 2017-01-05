@@ -2,24 +2,26 @@
 <html lang="en" ng-app = "BlogApp">
 
   <head>
-      // bootstrap cdn for easy formatting
+      <!--bootstrap cdn for easy formatting-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js">
-        </script>
+
+      <!--install angular to grab data from the clientside, note: ng-app = "??" must be delcared-->
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+
+      <!--static controller defining requests-->
         <script src="app.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>m s c t e c h . i n f o</title>
   </head>
   <body>
-    // form for blog creation
+    <!--adds more space in the margins, more polished look-->
     <div class="container" ng-controller="BlogController">
     <h1>Blog</h1>
+      <!--form for blog creation-->
       <input ng-model="post.title" class="form-control" placeholder="Title"/>
       <textarea ng-model="post.body" class="form-control" placeholder="body"></textarea>
       <button ng-click="createPost(post)" class="btn btn-primary btn-block">Post</button>
-
-      ({posts})
 
     </div>
 
