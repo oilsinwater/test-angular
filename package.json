@@ -15,5 +15,18 @@
     "mongoose": "^4.7.6"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "blog draft app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oilsinwater/msctech.info.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oilsinwater/msctech.info/issues"
+  },
+  "homepage": "https://github.com/oilsinwater/msctech.info#readme",
+  "keywords": [
+    "blog",
+    "technology",
+    "non-profit"
+  ]
 }
